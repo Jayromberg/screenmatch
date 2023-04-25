@@ -7,6 +7,7 @@ public class Main {
         myMovie.setName("O poderoso chefão");
         myMovie.setReleaseYear(1970);
         myMovie.setDurationInMinutes(180);
+        myMovie.setIncludedInThePlan(true);
 
         myMovie.evaluate(10);
         myMovie.evaluate(5);
