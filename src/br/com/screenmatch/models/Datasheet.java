@@ -1,4 +1,4 @@
-package domain;
+package br.com.screenmatch.models;
 
 public class Datasheet {
     private String name;

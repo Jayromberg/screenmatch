@@ -1,4 +1,4 @@
-import domain.Movie;
+import br.com.screenmatch.models.Movie;
 
 public class Main {
     public static void main(String[] args) {
