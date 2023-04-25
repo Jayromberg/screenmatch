@@ -1,10 +1,13 @@
-import domain.Movie;
+import domain.Datasheet;
 
 public class Main {
     public static void main(String[] args) {
-        Movie myMovie = new Movie();
+        Datasheet myMovie = new Datasheet();
 
-        myMovie.name = "O poderoso chefão";
+        myMovie.setName("O poderoso chefão");
+        myMovie.setReleaseYear(1970);
+        myMovie.setDurationInMinutes(180);
 
+        myMovie.displayTechnicalSheet();
     }
 }

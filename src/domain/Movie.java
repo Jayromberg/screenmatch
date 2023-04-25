@@ -25,7 +25,7 @@ public class Movie {
     }
 
     public void setAssessments(double assessments) {
-        this.assessments = assessments;
+        this.assessments += assessments;
     }
 
     public double getAssessments() {
@@ -33,7 +33,7 @@ public class Movie {
     }
 
     public void setRatingTotals(int ratingTotals) {
-        this.ratingTotals = ratingTotals;
+        this.ratingTotals += ratingTotals;
     }
 
     public int getRatingTotals() {
