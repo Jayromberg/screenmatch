@@ -6,4 +6,5 @@ public class Movie {
     double assessments;
     int ratingTotals;
     int durationInMinutes;
+    boolean includedInThePlan;
 }
