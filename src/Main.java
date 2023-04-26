@@ -1,3 +1,4 @@
+import br.com.screenmatch.calculator.TimeCalculator;
 import br.com.screenmatch.models.Movie;
 import br.com.screenmatch.models.Series;
 
@@ -25,9 +26,14 @@ public class Main {
         mySeries.evaluate(5);
         mySeries.evaluate(3.5);
 
+        TimeCalculator calculator = new TimeCalculator();
+        calculator.add(myMovie);
+        calculator.add(mySeries);
+
         myMovie.displayTechnicalSheet();
         System.out.println("*****************************");
         mySeries.displayTechnicalSheet();
         System.out.println("Duração do série: " + mySeries.getDurationInMinutes());
+        System.out.println("calculator.getTotalTime() = " + calculator.getTotalTime());
     }
 }
