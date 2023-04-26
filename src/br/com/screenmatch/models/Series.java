@@ -44,4 +44,9 @@ public class Series extends Datasheet {
     public void setMinutesPerEpisode(int minutesPerEpisode) {
         this.minutesPerEpisode = minutesPerEpisode;
     }
+
+    @Override
+    public int getDurationInMinutes() {
+        return seasons * episodesBySeason * minutesPerEpisode;
+    }
 }
