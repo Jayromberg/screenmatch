@@ -13,7 +13,7 @@ public class Episode implements Classification {
     }
 
     public void setTotalViews(int totalViews) {
-        this.totalViews = totalViews;
+        this.totalViews += totalViews;
     }
 
     public int getNumber() {
