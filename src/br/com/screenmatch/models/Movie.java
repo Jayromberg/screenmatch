@@ -1,6 +1,8 @@
 package br.com.screenmatch.models;
 
-public class Movie extends Datasheet {
+import br.com.screenmatch.interfaces.Classification;
+
+public class Movie extends Datasheet implements Classification {
     private  String director;
     public void displayTechnicalSheet() {
         System.out.println("Nome do filme: " + getName());
@@ -15,5 +17,10 @@ public class Movie extends Datasheet {
 
     public void setDirector(String director) {
         this.director = director;
+    }
+
+    @Override
+    public int getClassification() {
+        return (int) getAverage() / 2;
     }
 }

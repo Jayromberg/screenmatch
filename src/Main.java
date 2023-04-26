@@ -1,4 +1,4 @@
-import br.com.screenmatch.calculator.TimeCalculator;
+import br.com.screenmatch.utils.TimeCalculator;
 import br.com.screenmatch.models.Movie;
 import br.com.screenmatch.models.Series;
 
