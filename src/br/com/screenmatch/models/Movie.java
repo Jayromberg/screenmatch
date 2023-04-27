@@ -23,4 +23,9 @@ public class Movie extends Datasheet implements Classification {
     public int getClassification() {
         return (int) getAverage() / 2;
     }
+
+    @Override
+    public String toString() {
+        return "Filme: " + this.getName() + " (" + this.getReleaseYear() + ")";
+    }
 }

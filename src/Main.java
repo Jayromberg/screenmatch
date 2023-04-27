@@ -22,8 +22,9 @@ public class Main {
         mySeries.setSeasons(10);
         mySeries.setEpisodesBySeason(10);
         mySeries.setMinutesPerEpisode(50);
-        myEpisode.setNumber(1);
+
         myEpisode.setSeries(mySeries);
+        myEpisode.setNumber(1);
         myEpisode.setTotalViews(300);
 
         myMovie.evaluate(10);
