@@ -6,6 +6,10 @@ public class Series extends Datasheet {
     private int episodesBySeason;
     private int minutesPerEpisode;
 
+    public Series(String name, int releaseYear) {
+        super(name, releaseYear);
+    }
+
     public void displayTechnicalSheet() {
         System.out.println("Nome do série: " + getName());
         System.out.println("Ano de lançamento: " + getReleaseYear());

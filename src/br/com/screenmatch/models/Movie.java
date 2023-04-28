@@ -4,6 +4,11 @@ import br.com.screenmatch.interfaces.Classification;
 
 public class Movie extends Datasheet implements Classification {
     private  String director;
+
+    public Movie(String name, int releaseYear) {
+        super(name, releaseYear);
+    }
+
     public void displayTechnicalSheet() {
         System.out.println("Nome do filme: " + getName());
         System.out.println("Ano de lançamento: " + getReleaseYear());

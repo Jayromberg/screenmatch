@@ -6,19 +6,15 @@ import br.com.screenmatch.models.Series;
 
 public class Main {
     public static void main(String[] args) {
-        Movie myMovie = new Movie();
-        Series mySeries = new Series();
+        Movie myMovie = new Movie("O poderoso chefão", 1970);
+        Series mySeries = new Series("Lost", 2000);
         Episode myEpisode = new Episode();
         TimeCalculator calculator = new TimeCalculator();
         FilterRecommendations filterRecommendations = new FilterRecommendations();
-
-        myMovie.setName("O poderoso chefão");
-        myMovie.setReleaseYear(1970);
+        
         myMovie.setDurationInMinutes(180);
         myMovie.setIncludedInThePlan(true);
 
-        mySeries.setName("Lost");
-        mySeries.setReleaseYear(2000);
         mySeries.setSeasons(10);
         mySeries.setEpisodesBySeason(10);
         mySeries.setMinutesPerEpisode(50);
