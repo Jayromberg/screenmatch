@@ -29,6 +29,11 @@ public class Datasheet {
         ratingTotals++;
     }
 
+    public Datasheet(String name, int releaseYear) {
+        this.name = name;
+        this.releaseYear = releaseYear;
+    }
+
     public double getAverage(){
         return sumOfRatings / ratingTotals;
     }
